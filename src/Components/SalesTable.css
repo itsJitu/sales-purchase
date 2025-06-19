@@ -1,0 +1,194 @@
+.search {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 15px 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.search-box{
+    border: 1px solid gray;
+    padding: 15px 30px;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    width: 150px
+}
+
+.search-bar{
+    border: none;
+    width: 100px;
+    height: 15px;
+    font-size: 15px;
+}
+
+.selects {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.select {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.details-bar {
+  width: 100%;
+  overflow-x: auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.tab {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+td {
+    border-bottom: 1px solid rgb(146, 143, 143);
+    text-align: center;   
+}
+
+th, td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background-color: gray;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.eye {
+    border: 1px solid rgb(225, 223, 223);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.setting {
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    width: 98%;
+    top: 75px;
+    font-size: 30px;
+    padding: 2px 45px;
+}
+
+
+.i-setting {
+   background-color: orange;
+   border-radius: 50px;
+   color:white;
+   padding: 15px ; 
+}
+
+.sec {
+    padding: 0px 15px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(146, 143, 143);
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.raw {
+    display: flex;
+    color: gray;
+    gap: 10px;
+    align-items: center;
+}
+
+.opt {
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+}
+
+.arrow-back {
+    align-items: center;
+    justify-content:flex-end;
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+
+.received{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pending{
+    background-color: rgb(206, 231, 50);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.return{
+    background-color: rgb(185, 61, 33);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.paid{
+    background-color: rgb(88, 170, 88);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.overdue{
+    background-color: rgb(219, 232, 133);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.unpaid{
+    background-color: rgb(232, 144, 124);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+

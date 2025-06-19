@@ -1,6 +1,7 @@
 import { CiCirclePlus } from "react-icons/ci";
 import { IoMdCloseCircle } from "react-icons/io";
 import { PiBarcode } from "react-icons/pi";
+import { Link } from 'react-router-dom';
 
 import "./AddSales.css";
 
@@ -11,11 +12,14 @@ function AddSales() {
         {/* Header & close-icon */}
         <div className="header">
           <h1>Add Sales Return </h1>
+        <Link to="/SalesTable">
           <IoMdCloseCircle className="close" />
+          </Link>
         </div>
 
         {/* Customer Name Date & Reference */}
         <div>
+
           <div className="pro">
             {/* customer Name */}
             <div className="box">
@@ -67,7 +71,8 @@ function AddSales() {
               <PiBarcode />
             </div>
           </div>
-        </div>
+
+          {/* net-Unit Product Name Sub-Total Tax Discount */}
 
         <div className="details-bar">
           <div className="details">
@@ -79,11 +84,12 @@ function AddSales() {
             <p>Tax %</p>
             <p>Subtotal($)</p>
           </div>
+
           <hr></hr>
 
-          {/* Order-table */}
+          {/* Order-Tax-Discount-table */}
 
-          <div style={{ display: "flex", justifyContent: "flex-end", }}>
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <table className="summary-table">
               <tbody>
                 <tr>
@@ -98,7 +104,7 @@ function AddSales() {
             </table>
           </div>
 
-             {/* Barcode */}
+          {/* Barcode */}
           <div className="bar-2">
             <div className="barcode-box">
               <input
@@ -109,8 +115,10 @@ function AddSales() {
               <PiBarcode />
             </div>
           </div>
+
         </div>
 
+        
         <div className="details-bar">
           <div className="details">
             <p>Product Name</p>
@@ -122,9 +130,89 @@ function AddSales() {
             <p>Subtotal($)</p>
           </div>
           <hr></hr>
+       
 
+        
+          {/* order-tax Discount-Shipping-Grand-Total */}
 
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <table className="summary-table">
+              <tbody>
+                <tr>
+                  <td className="income-rel">Order tax</td>
+                  <td className="income-det">$0.00</td>
+                </tr>
+                <tr>
+                  <td className="income-rel">Discount</td>
+                  <td className="income-det">$0.00</td>
+                </tr>
+                <tr>
+                  <td className="income-rel">Shipping</td>
+                  <td className="income-det">$0.00</td>
+                </tr>
+                <tr>
+                  <td className="income-rel">Grand Total</td>
+                  <td className="income-det">$0.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
+             
+        {/* Footer */}
+      
+          <div className="footer">
+            {/* Order */}
+
+            <div className="box-2">
+              <p>
+                Order <span className="thunder">*</span>
+              </p>
+              <input type="text" placeholder="0" className="input-2"></input>
+            </div>
+
+            {/* Discount */}
+
+            <div className="box-2">
+              <p>
+                Discount <span className="thunder">*</span>
+              </p>
+              <input type="text" placeholder="0" className="input-2"></input>
+            </div>
+
+            {/* Shipping */}
+
+            <div className="box-2">
+              <p>
+                Shipping <span className="thunder">*</span>
+              </p>
+              <input type="text" placeholder="0" className="input-2"></input>
+            </div>
+
+            {/* Reference */}
+            <div className="box-2">
+              <p>
+                Status<span className="thunder">*</span>
+              </p>
+                <select className="input-2">
+                  <option>Select </option>
+                </select>
+            </div>
+
+          </div>
+        </div>
+
+        <hr></hr>
+
+        {/* Button */}
+        <div>
+          <div className="button-group">
+            <button className="button-cancel">Cancel</button>
+            <button className="button-save">Save</button>
+          </div>
+        </div>
+
       </div>
     </>
   );
