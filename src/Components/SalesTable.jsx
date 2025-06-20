@@ -131,6 +131,19 @@ const dummyData = [
     due: "0",
     paymentStatus: "Paid",
   },
+  {
+    id: 10,
+    img: img1,
+    product: "Macbook Pro",
+    date: "19 nov 2022",
+    person: img2,
+    customer: "Patricia Lewis",
+    Status: "Received",
+    total: "800",
+    paid: "800",
+    due: "0",
+    paymentStatus: "Paid",
+  },
 ];
 
 const SupplierRow = ({ supplier }) => {

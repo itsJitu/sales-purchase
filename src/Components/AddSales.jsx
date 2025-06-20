@@ -208,8 +208,8 @@ function AddSales() {
         {/* Button */}
         <div>
           <div className="button-group">
-            <button className="button-cancel">Cancel</button>
-            <button className="button-save">Save</button>
+            <Link to="/SalesTable" className="button-cancel">Cancel</Link>
+            <Link to="/SalesTable" className="button-save">Save</Link>
           </div>
         </div>
 
